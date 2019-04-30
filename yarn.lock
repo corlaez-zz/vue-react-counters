@@ -1186,6 +1186,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.8.tgz#e5d71173c95533be9842b2c798978f095f912aab"
   integrity sha512-szA3x/3miL90ZJxUCzx9haNbK5/zmPieGraZEe4WI+3srN0eGLiT22NXeMHmyhNEopn+IrxqMc7wdVwvPl8meg==
 
+"@types/node@^10.5.1":
+  version "10.14.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.6.tgz#9cbfcb62c50947217f4d88d4d274cc40c22625a9"
+  integrity sha512-Fvm24+u85lGmV4hT5G++aht2C5I4Z4dYlWZIh62FAfFO/TfzXtPpoLI6I7AuBWkIFqZCnhFOoTT7RjjaIL5Fjg==
+
 "@types/prop-types@*":
   version "15.7.1"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
@@ -1966,6 +1971,14 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+betsy@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/betsy/-/betsy-1.0.2.tgz#e53abc4750d6a6a112a7835f723db0ca01a3b197"
+  integrity sha512-yt/OUTbSeCRj4uwbDnjTbnWgrLsgBl1nzJLdZH2eOtrf3SDH7svdoTMWOvTFhUdIM86pY6k21o/4SCIT6RYjig==
+  dependencies:
+    "@types/node" "^10.5.1"
+    tslib "^1.9.3"
 
 big.js@^5.2.2:
   version "5.2.2"
@@ -6649,6 +6662,35 @@ osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+overmind-react@^18.1.0:
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/overmind-react/-/overmind-react-18.1.0.tgz#55bbfb447e1eef82fdae5e20772ed8d3f813898f"
+  integrity sha512-VRd2anIztxAgguJtaxmRGY8QPksB4ZOj3JrjZ3mWlEV/SEtr5rDI3UfmTsctWOrKkGwEcvgycA2IhTFuiBKq2A==
+  dependencies:
+    "@types/node" "^10.5.1"
+    overmind "17.1.0"
+    tslib "^1.9.3"
+
+overmind-vue@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/overmind-vue/-/overmind-vue-17.1.0.tgz#9f1d292483703fb0b3291d7a07518762fe0e97ce"
+  integrity sha512-ofBurg0owqufwmhAkWiFUZNaiM6/YqOHdUTGYKBdX5diFK/5G2JT/OcBqEzXU6Tm+hNbXODtRqNF7PhuopPnoA==
+  dependencies:
+    "@types/node" "^10.5.1"
+    overmind "17.1.0"
+    tslib "^1.9.3"
+
+overmind@17.1.0, overmind@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/overmind/-/overmind-17.1.0.tgz#4aef6b9da90114f38803b17e6a18edaf1464b0b4"
+  integrity sha512-5fbzc960slsNidfJjn8u8bgogPYNg7qHk2HMwTwagA5/airV+0ooKpIyE2flgHvNfV7xJr8lNbCO7tqU99sHSQ==
+  dependencies:
+    "@types/node" "^10.5.1"
+    betsy "1.0.2"
+    is-plain-obj "^1.1.0"
+    proxy-state-tree "4.3.0"
+    tslib "^1.9.3"
+
 p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
@@ -7697,6 +7739,13 @@ proxy-addr@~2.0.4:
     forwarded "~0.1.2"
     ipaddr.js "1.9.0"
 
+proxy-state-tree@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/proxy-state-tree/-/proxy-state-tree-4.3.0.tgz#2107a2a4b85898eeceb32321867b704f9d0b6503"
+  integrity sha512-z46Qt0IL6Ifne0TUS0mo6kA6bN075aAR96g+7mEETiLyO2OXUs61JV2tE10keivt4gqxDelk1JSBcfMjQawrvg==
+  dependencies:
+    is-plain-obj "^1.1.0"
+
 prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
@@ -7874,7 +7923,7 @@ react-dev-utils@^9.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@16.8.6:
+react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -7952,7 +8001,7 @@ react-scripts@3.0.0:
   optionalDependencies:
     fsevents "2.0.6"
 
-react@16.8.6:
+react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -9196,7 +9245,7 @@ ts-pnp@^1.0.0:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"
   integrity sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
@@ -9535,6 +9584,11 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
+
+vue@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
